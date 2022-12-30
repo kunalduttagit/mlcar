@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background: linear-gradient( 134deg, #2B3A55, #000000 80%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+#verticalButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background: rgb(1, 131, 238);
+}
+
+#carCanvas {
+    background: #d3d3d3;
+}
+
+#networkCanvas {
+    background: #000;
+    transform: translateY(42px);
+}
+
+.dropdown{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:2px;
+    border: none;
+    border-radius: 10px;
+    background:whitesmoke;
+    padding:2px;
+}
+
+label{
+    text-align: center;
+    color: white;
+    font-family: "Helvetica Neue";
+    margin-bottom: 20px;
+}

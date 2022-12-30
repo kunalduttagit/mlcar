@@ -1,0 +1,63 @@
+{% load static %}
+
+<link rel="stylesheet" href="static/css/nav.css">
+
+
+
+<img src="/static/images/logo.png" class="logo">
+
+<div class="topbar">
+
+    <div class="some">
+        <p class="docs">
+            <a href="{% url 'docs' %}">Documentations</a>
+        </p>
+
+        <button class="info">
+            i
+        </button>
+    </div>
+
+</div>
+
+<div class="offscreenInfo">
+    <p>As you can see we have 4 buttons, <strong>Save, Delete, Mutate and Cars</strong></p>
+    <h3 id="choose-number-of-cars">1. Choose number of Cars</h3>
+    <p>First start by selecting number of cars you want to deploy in Parallel (more cars will use more computer processing power, please proceed accordingly). More cars running in parallel can help us train our model faster.</p>
+    <h3 id="mutate">2. Mutate</h3>
+    <p>Mutation is a genetic algorithm used in this project. A lesser value for mutation will result in more cars be like our original car, and more value of mutation will lead to less cars follow footsteps of our original car.</p>
+    <h4 id="lower-mutation-value">Lower Mutation Value</h4>
+    <p>So say the car is almost crossing that obstacle but misses it by an inch. What we do is set a very low value for our Mutation, say <code>0.1</code>. This will help randomise our remaining cars to shift a little bit here and there so that we can finally go through that obstacle.</p>
+    <h4 id="higher-mutation-value">Higher Mutation Value</h4>
+    <p>Consider a situation, where the car is very far away from crossing that obstacle, so we set an higher value for our mutation, so that cars get more randomisation and crosses the obstacle somehow.</p>
+    <h3 id="save">3. Save</h3>
+    <p>When you find that your model car behaves perfectly or makes any small progress, use the <strong>SAVE</strong> button to save that progress, so the network can use those set of weights and biases to further mutate into something better.</p>
+    <h3 id="delete">4. Delete</h3>
+    <p>If you feel that your car doesn’t behaves properly at all, or you’ve mistakenly saved a wrong car, just delete it to start with new training data.</p>
+    <p>Play around with those settings to understand the model better.</p>
+</div>
+
+
+
+
+
+<div class="myNavbar">
+    <div class="offScreenMenu">
+        <ul id="options">
+            <li><a href="{% url 'interactive' %}" target="_blank">Segment Intersection</a></li>
+            <li><a href="https://www.linkedin.com/in/kunal-dutta-6b7109225/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/kunalduttagit" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/_kunaldutta/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.codechef.com/users/kunaldutta" target="_blank">Codechef</a></li>
+        </ul>
+    </div>
+    <div class="myNav">
+        <div class="hamburgerMenu">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+
+    </div>
+
+</div>
